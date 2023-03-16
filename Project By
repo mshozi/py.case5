@@ -1,0 +1,40 @@
+print("      A Projects By Team 5        ")
+print("      [*\Classes of Case 5/*]     ")
+print("         [1] Photographer         ")
+print("         [2] Website Designer     ")
+print("         [3] Customer             ")
+cin = int(input("Select One Option =  "))
+print(cin)
+if cin == 1:
+    class Photography:
+        def __init__(self, name, exp, specialization):
+            self.name = name
+            self.exp = exp
+            self.specialization = specialization
+       
+        def say_hi(self):
+            print('Name of Photographer is:', self.name)
+            print('Specialization:', self.specialization)
+            print('Experience:', self.exp)
+
+    p = Photography('Bryant Rothmoore', 'several years', 'family/child portraits')
+    p.say_hi()
+elif cin == 2:
+    class Website_Designer:
+        def __init__(self,contracted):
+            self.contracted = contracted
+        def say_by(self):
+            print('Website Designer', self.contracted)
+           
+    s = Website_Designer('contracted by Bryant Rothmoore to design a new website')
+    s.say_by()
+elif cin == 3:
+    class Customer:
+        def __init__(self,feedback):
+            self.feedback = feedback
+        def say_sorry(self):
+            print('Feedback & Comments:',self.feedback)
+    a = Customer('I have wanted to get some sort of gift for my daughter besides just the usual wedding snapshots. You know it would be good to give her just that something extra')
+    a.say_sorry()
+else:
+    print("Invalid option selected.")
